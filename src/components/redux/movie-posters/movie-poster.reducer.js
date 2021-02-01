@@ -1,7 +1,7 @@
 import { MoviePosterTypes } from './movie-poster.types'
 
 const INITIAL_STATE = {
-    moviePosterStorage: [],
+    moviesList: [],
     isFetching: false,
     errorMsg: null
 }
@@ -23,7 +23,7 @@ const moviePosterReducer = (state = INITIAL_STATE, action) => {
                 return{
                     ...state,
                     isFetching:false,
-                    moviePosterStorage:action.payload
+                    moviesList:action.payload
                 }
         default: return state;
     }
