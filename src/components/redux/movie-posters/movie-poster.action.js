@@ -16,11 +16,11 @@ export const fetchCollectionError=(msg)=>({
     payload:msg
 })
 
-export const fetchCollectionAsync=()=>{
+export const fetchCollectionAsync=(movieName)=>{
    return dispatch=>{
        dispatch(fetchCollectionStart());
-       axios.get('http://www.omdbapi.com/?apikey=c5a56bd1&s=inception')
-       .then(response=>dispatch(fetchCollectionSuccess(response.data.Search),console.log(response.data.Search)))
+       axios.get(`http://www.omdbapi.com/?apikey=c5a56bd1&s=${movieName}`)
+       .then(response=>dispatch(fetchCollectionSuccess(response.data.Search)))
        
        .catch(error=>dispatch(fetchCollectionError(error)))
    } 
