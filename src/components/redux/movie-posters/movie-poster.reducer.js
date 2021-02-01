@@ -19,6 +19,13 @@ const moviePosterReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 errorMsg: action.payload
             }
+            case MoviePosterTypes.FETCH_MOVIE_POSTER_SUCCESS:
+                return{
+                    ...state,
+                    isFetching:false,
+                    moviePosterStorage:action.payload
+                }
         default: return state;
     }
 }
+export default moviePosterReducer;
