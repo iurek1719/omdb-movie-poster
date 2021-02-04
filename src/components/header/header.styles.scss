@@ -1,7 +1,12 @@
 a{
     text-decoration: none;
+    
 }
-
+.navbar{
+   
+    height:6vh;
+    
+}
 .logo{
     height:5vh;
     width:3vw;
@@ -12,7 +17,5 @@ a{
 }
 
 .option{
-    position:absolute;
-    top:4vh;
-    right:2vw;
+    color:white !important
 }

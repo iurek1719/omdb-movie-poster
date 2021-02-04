@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux'
 import storage from 'redux-persist/lib/storage';
 
-import moviePosterReducer from './movie-posters/movie-poster.reducer';
+import moviePosterReducer from './movie-posters/movie-poster.action';
 import { persistReducer } from 'redux-persist';
 
 const persistConfig={

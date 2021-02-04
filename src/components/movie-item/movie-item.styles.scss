@@ -1,0 +1,15 @@
+.posters {
+
+    overflow: hidden; 
+    padding:10px;
+    padding-left:10px;
+  }
+  
+  .posters img {
+    transition: transform .5s ease;
+  }
+  
+  .posters:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }

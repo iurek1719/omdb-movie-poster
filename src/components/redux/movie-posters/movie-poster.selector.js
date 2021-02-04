@@ -11,3 +11,8 @@ export const selectIsDataFetching=createSelector(
     [movies],
     movies=>movies.isFetching
 )
+
+export const selectedMovieSelector=createSelector(
+    [movies],
+    movies=>movies.selectedMovie
+)
