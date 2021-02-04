@@ -10,7 +10,7 @@ const MovieItem = ({ currentMovie }) => {
     
     return (
         <div onClick={()=>(history.push(`/MovieDetails/${currentMovie.imdbID}`),dispatch(selectedMovie(currentMovie.imdbID)))} className="posters" id={currentMovie.imdbID}>
-        <img src={currentMovie.Poster} alt={currentMovie.Title}/>
+        <img className="item-img" src={currentMovie.Poster} alt={currentMovie.Title}/>
     </div>
     )
 

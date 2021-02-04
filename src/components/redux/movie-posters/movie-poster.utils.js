@@ -7,15 +7,4 @@ export const splitArrayIntoChunks = (array, numberOfChunks) => {
 }
 
 
-export const fetchSpecificMovieData = async (imdb) => {
-  
-
-    try {
-        const response = await axios.get(`http://www.omdbapi.com/?apikey=c5a56bd1&i=${imdb}`);
-        return response.data
-    } catch (error) {
-        console.log(error);
-    }
-
-}
 

@@ -16,3 +16,7 @@ export const selectedMovieSelector=createSelector(
     [movies],
     movies=>movies.selectedMovie
 )
+export const specificMovieData=createSelector(
+    [movies],
+    movies=>movies.specificMovieData
+)
