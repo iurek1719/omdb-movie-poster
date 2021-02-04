@@ -11,13 +11,11 @@ export const Header = () => {
     <div className="header-container">
 
       <nav class="navbar navbar-light bg-dark">
-        <Link className="logo-link option" to="">
+        <Link className="logo-link option" to="/">
           <Logo className="logo" />
         </Link>
 
-
-
-        <Link className="option" to="">Home</Link>
+        <Link className="option" to="/">Home</Link>
 
 
       </nav>
