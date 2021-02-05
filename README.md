@@ -11,7 +11,7 @@ Screenshots: </br>
 
 ## Setup the project
 
-In order to use this application, you need to have a key which you will recieve from [OMDB API's website] (http://www.omdbapi.com/) and place it into redux/action/link.
+In order to use this application, you need to have a key which you will recieve from [OMDB API's website](http://www.omdbapi.com/) and place it into redux/action/link.
 
 ## Start 
 
