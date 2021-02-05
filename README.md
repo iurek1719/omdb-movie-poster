@@ -6,7 +6,7 @@
 
 Screenshots: </br>
 
-![Homepage] (https://i.imgur.com/2qjk8J3.png)
+![Homepage](https://i.imgur.com/2qjk8J3.png)
 ![MovieDetails](https://i.imgur.com/ohtLJ7n.png)
 
 ## Setup the project
