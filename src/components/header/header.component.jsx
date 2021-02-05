@@ -9,15 +9,11 @@ import './header.styles.scss';
 export const Header = () => {
   return (
     <div className="header-container">
-
       <nav class="navbar navbar-light bg-dark">
-        <Link className="logo-link option" to="/">
+        <Link className="logo-link" to="/">
           <Logo className="logo" />
         </Link>
-
         <Link className="option" to="/">Home</Link>
-
-
       </nav>
 
     </div>

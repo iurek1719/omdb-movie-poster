@@ -6,9 +6,10 @@ import axios from 'axios'
 export const fetchCollectionAsync = createAsyncThunk(
     'fetchCollectionAsync',
     async (movieName) => {
+
         try {
             fetchMoviePosterStart();
-            const response = await axios.get(`http://www.omdbapi.com/?apikey=c5a56bd1&s=${movieName}`);
+            const response = await axios.get(`http://www.omdbapi.com/?apikey=[***INPUT KEY HERE***]&s=${movieName}`);
             return response.data.Search
         } catch (error) {
             fetchMoviePosterFailed(error);

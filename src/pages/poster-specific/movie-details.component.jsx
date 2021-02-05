@@ -7,19 +7,13 @@ const MovieDetails = () => {
   let movieId = useSelector(selectedMovieSelector);
   let movieData = useSelector(specificMovieData);
   let dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(getSpecificMovieData(movieId))
   }, [])
-
-
-
-  console.log(movieData);
-
-
   return (
     <div>
       <div class="movie_card" id="bright">
+
         <div class="info_section">
           <div class="movie_header">
             <img class="locandina" src={movieData.Poster} />
@@ -33,9 +27,7 @@ const MovieDetails = () => {
               {movieData.Plot}
             </p>
           </div>
-
         </div>
-        <div class="blur_back bright_back"></div>
       </div>
     </div>
 
