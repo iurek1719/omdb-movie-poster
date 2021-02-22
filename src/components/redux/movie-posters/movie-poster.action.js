@@ -22,7 +22,7 @@ export const fetchCollectionAsync = createAsyncThunk(
 export const getSpecificMovieData = createAsyncThunk(
     'fetchSpecificMovieData',
     async (imdb) => {
-        const response = await axios.get(`http://www.omdbapi.com/?apikey=c5a56bd1&i=${imdb}`)
+        const response = await axios.get(`http://www.omdbapi.com/?apikey=[***INPUT KEY HERE***]=${imdb}`)
         return response.data
     }
 )
@@ -39,6 +39,7 @@ const movieSlice = createSlice({
     },
     reducers: {
         fetchMoviePosterStart(state) {
+            
             state.isFetching = true;
         },
         fetchMoviePosterFailed(state, action) {
